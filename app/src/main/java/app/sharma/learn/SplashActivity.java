@@ -2,15 +2,11 @@ package app.sharma.learn;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import android.os.Handler;
-import android.view.View;
+import com.skyfishjy.library.RippleBackground;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -21,12 +17,16 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        final RippleBackground rippleBackground=(RippleBackground)findViewById(R.id.content);
+        rippleBackground.startRippleAnimation();
+
         handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashActivity.this,MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
+                rippleBackground.stopRippleAnimation();
                 finish();
             }
         },3000);
