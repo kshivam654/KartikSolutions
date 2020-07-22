@@ -29,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
                 rippleBackground.stopRippleAnimation();
                 finish();
             }
-        },3000);
+        },5000);
 
     }
 }
