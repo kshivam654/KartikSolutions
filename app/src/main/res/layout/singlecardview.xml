@@ -15,26 +15,26 @@
     app:cardUseCompatPadding="true">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:background="#1FB598"
         android:gravity="center"
-        >
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
 
         <TextView
             android:id="@+id/titlee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold_italic"
             android:text="C++ Introductions"
-            android:textColor="#2C4ADD"
             android:textAlignment="center"
+            android:textColor="#DDCA1B"
             android:textStyle="bold" />
 
     </LinearLayout>
