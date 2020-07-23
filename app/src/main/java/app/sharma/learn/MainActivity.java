@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.q42.android.scrollingimageview.ScrollingImageView;
 
 public class MainActivity extends AppCompatActivity {
 
