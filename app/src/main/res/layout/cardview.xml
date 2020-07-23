@@ -181,7 +181,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-
         <androidx.cardview.widget.CardView
             android:id="@+id/loops"
             android:layout_width="0dp"
