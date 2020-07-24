@@ -4,45 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.annotation.SuppressLint;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.app.Activity;
-import android.os.Bundle;
-import android.os.Handler;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
-
-
-import android.os.Bundle;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class category extends AppCompatActivity {
-private List<maincategories>yay;
+public class subtopics extends AppCompatActivity {
+    private List<maincategories>yay;
+    private int position;
+    private List<maincategories>yay2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        List<maincategories> maincats ;
-        maincats=new ArrayList<>();
-        yay=new ArrayList<>();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+        List<maincategories> maincats ;
+        Bundle extras = getIntent().getExtras();
+       position= extras.getInt("position");
+        maincats=new ArrayList<>();
+        yay=new ArrayList<>();
+        yay2=new ArrayList<>();
         maincats.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay));
         maincats.add(new maincategories("Syntax", "IHNzOHi8sJs", "this is a Demo Context",yay));
         maincats.add(new maincategories("Variables", "IHNzOHi8sJs", "this is a Demo Context",yay));
@@ -70,9 +51,20 @@ private List<maincategories>yay;
         maincats.add(new maincategories("Files", "IHNzOHi8sJs", "this is a Demo Context",yay));
         maincats.add(new maincategories("Exceptions", "IHNzOHi8sJs", "this is a Demo Context",yay));
 
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
+        yay.add(new maincategories("Introduction", "IHNzOHi8sJs", "this is a Demo Context",yay2));
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);
-        RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getApplicationContext(),maincats);
+        RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getApplicationContext(),maincats.get(position).getSubtopic());
+
         myrv.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
         myrv.setAdapter(myAdapter);
     }

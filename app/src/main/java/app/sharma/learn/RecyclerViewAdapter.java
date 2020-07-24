@@ -51,9 +51,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(mContext,DetailActivity.class);
+                Intent intent = new Intent(mContext,subtopics.class);
 
                 // passing data to the book activity
+                intent.putExtra("position",position);
                 intent.putExtra("Title",mc.getTitle());
                 intent.putExtra("videoId",mc.getVideoId());
                 intent.putExtra("context",mc.getContext());
