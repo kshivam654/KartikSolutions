@@ -45,16 +45,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-
+        final maincategories mc = mData.get(position);
         holder.title.setText(mData.get(position).getTitle());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(mContext,category.class);
+                Intent intent = new Intent(mContext,DetailActivity.class);
 
                 // passing data to the book activity
-                intent.putExtra("Title",mData.get(position).getTitle());
+                intent.putExtra("Title",mc.getTitle());
+                intent.putExtra("videoId",mc.getVideoId());
+                intent.putExtra("context",mc.getContext());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 // start the activity
                 mContext.startActivity(intent);
 
