@@ -36,7 +36,7 @@ public class DetailActivity extends AppCompatActivity {
             videoId = getIntent().getStringExtra("videoId");
         }
         textView.setText(title);
-        topicDetail.setText(context+" " + title);
+        topicDetail.setText(context);
 //      code for video play
         YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
         getLifecycle().addObserver(youTubePlayerView);

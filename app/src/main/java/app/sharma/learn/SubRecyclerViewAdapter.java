@@ -1,61 +1,52 @@
 package app.sharma.learn;
 
-
-
+import android.content.Context;
+import android.content.Intent;
 import android.os.Parcelable;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-
-import android.content.Context;
-import android.content.Intent;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import java.util.List;
 
-
-
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class SubRecyclerViewAdapter extends RecyclerView.Adapter<SubRecyclerViewAdapter.MyViewHolder> {
 
     private Context mContext ;
-    private List<maincategories> mData ;
+    private List<subcategories> mData ;
 
 
-    public RecyclerViewAdapter(Context mContext, List<maincategories> mData) {
+    public SubRecyclerViewAdapter(Context mContext, List<subcategories> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public SubRecyclerViewAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View view ;
         LayoutInflater mInflater = LayoutInflater.from(mContext);
         view = mInflater.inflate(R.layout.singlecardview,parent,false);
-        return new MyViewHolder(view);
+        return new SubRecyclerViewAdapter.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
-        final maincategories mc = mData.get(position);
+    public void onBindViewHolder(SubRecyclerViewAdapter.MyViewHolder holder, final int position) {
+        final subcategories mc = mData.get(position);
         holder.title.setText(mData.get(position).getTitle());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(mContext,subtopics.class);
+                Intent intent = new Intent(mContext,DetailActivity.class);
 
                 // passing data to the book activity
                 intent.putExtra("Title",mc.getTitle());
+                intent.putExtra("Context",mc.getContext());
+                intent.putExtra("VideoID",mc.getVideoId());
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 // start the activity
                 mContext.startActivity(intent);
