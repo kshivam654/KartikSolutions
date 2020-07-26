@@ -21,8 +21,8 @@ public class category extends AppCompatActivity {
         maincats = new ArrayList<>();
         maincats.add(new maincategories("Introduction"));
         maincats.add(new maincategories("Basics"));
-        maincats.add(new maincategories("Functions"));
-        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Arrays"));
+        maincats.add(new maincategories("Flow Control"));
         maincats.add(new maincategories("Functions"));
         maincats.add(new maincategories("Functions"));
         maincats.add(new maincategories("Functions"));

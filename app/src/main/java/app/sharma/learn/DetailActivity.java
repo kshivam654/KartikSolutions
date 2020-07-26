@@ -20,7 +20,7 @@ public class DetailActivity extends AppCompatActivity {
     TextView textView;
     TextView topicDetail;
     String title;
-    String videoId = "";
+    String videoId = "IHNzOHi8sJs";
     String context = "";
 
     @Override
@@ -32,8 +32,8 @@ public class DetailActivity extends AppCompatActivity {
         // Get Food Id from Intent.......
         if(getIntent() != null){
             title = getIntent().getStringExtra("Title");
-            context = getIntent().getStringExtra("context");
-            videoId = getIntent().getStringExtra("videoId");
+            context = getIntent().getStringExtra("Context");
+            videoId = getIntent().getStringExtra("VideoID");
         }
         textView.setText(title);
         topicDetail.setText(context);
