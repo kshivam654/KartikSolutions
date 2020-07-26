@@ -53,6 +53,29 @@ public class subtopics extends AppCompatActivity {
                 catigories.add(new subcategories("How to declare an Array?", "There are various ways in which we can declare an array. It can be done by specifying its type and size, by initializing it or both.", "IxFChpxFztg"));
                 catigories.add(new subcategories("What are the types of Array?", " In C++ programming language we do have mainly two types of variables: Single Dimensional Arrays and multidimensional Arrays. The single-dimensional stores the values hold the values in the form of the list while the multidimensional array store the value in the matrix.", "JJ2iSrwIkVs"));
                 break;
+            case "Functions":
+                catigories.add(new subcategories("What is a function and it's declaration.", "A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions.", "3B51M78os_Y"));
+                catigories.add(new subcategories("Types of Function", "There are two types of functions:built-in function and user-defined function.", "Gmxjxul27Q4"));
+                catigories.add(new subcategories("What Function overloading?", "Function overloading is a C++ programming feature that allows us to have more than one function having same name but different parameter list.", "d7IohNyEMQ0"));
+                catigories.add(new subcategories("How to pass the arguments into a function", "There are two ways to pass arguments into a function:pass by value and pass by reference.", "hNR6fsksEu8"));
+                break;
+            case "Pointers":
+                catigories.add(new subcategories("What is a Pointer?", "The variable that stores the address of another variable  is what in C++ is called a pointer.", "fBlM7pR2r_Q"));
+                catigories.add(new subcategories("Pointers and Arrays ", "The main difference being that pointers can be assigned new addresses, while arrays cannot. These two expressions are equivalent and valid, not only if a is a pointer, but also if a is an array.", "ASVB8KAFypk"));
+                catigories.add(new subcategories("What is Null Pointer?", "A pointer that is assigned NULL is called a null pointer.", "i8ACHqdfcFA"));
+                break;
+            case "Object Oriented Concepts":
+                catigories.add(new subcategories("What is a Constructor?", "A constructor is a special type of member function that initialises an object automatically when it is created. ", "a-jiPHY_gi4"));
+                catigories.add(new subcategories("What is a Destructor?", "Destructors in C++ are members functions in a class that delete an object. They are called when the class object goes out of scope such as when the function ends, the program ends, a delete variable is called.", "hI-XxfpzVBM"));
+                catigories.add(new subcategories("What is Inheritance?", " In C++, inheritance is a process in which one object acquires all the properties and behaviors of its parent object automatically.", "5pJyKzON8Ww"));
+                catigories.add(new subcategories("What is Polymorphism?", "Polymorphism means \"many forms\", and it occurs when we have many classes that are related to each other by inheritance. ", "oHT0GiE8MkM"));
+            case "Files and Exceptions":
+                catigories.add(new subcategories("File Handling", "In C++, files are mainly dealt by using three classes fstream, ifstream, ofstream available in fstream headerfile.", "TF2-F2duY6c"));
+                catigories.add(new subcategories("Text file and Binary file ", "A text file stores data in the form of alphabets, digits and other special symbols by storing their ASCII values and are in a human-readable format. binary file contains a sequence or a collection of bytes which are not in a human-readable format.", "u7piph2YXDc"));
+                catigories.add(new subcategories("What are Exception Handling?", "A C++ exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. ... C++ exception handling is built upon three keywords: try, catch, and throw.", "EyXXLpFriMc"));
+                break;
+
+
 
 
         }
