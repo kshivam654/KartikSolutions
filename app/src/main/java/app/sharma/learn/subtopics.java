@@ -72,7 +72,7 @@ public class subtopics extends AppCompatActivity {
             case "Files and Exceptions":
                 catigories.add(new subcategories("File Handling", "In C++, files are mainly dealt by using three classes fstream, ifstream, ofstream available in fstream headerfile.", "TF2-F2duY6c"));
                 catigories.add(new subcategories("Text file and Binary file ", "A text file stores data in the form of alphabets, digits and other special symbols by storing their ASCII values and are in a human-readable format. binary file contains a sequence or a collection of bytes which are not in a human-readable format.", "u7piph2YXDc"));
-                catigories.add(new subcategories("What are Exception Handling?", "A C++ exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. ... C++ exception handling is built upon three keywords: try, catch, and throw.", "EyXXLpFriMc"));
+                catigories.add(new subcategories("What are Exception Handling?", "A C++ exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero. ... C++ exception handling is built upon three keywords: try, catch, and throw.k", "EyXXLpFriMc"));
                 break;
 
 
