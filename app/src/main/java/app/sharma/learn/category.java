@@ -20,6 +20,21 @@ public class category extends AppCompatActivity {
         List<maincategories> maincats ;
         maincats = new ArrayList<>();
         maincats.add(new maincategories("Introduction"));
+        maincats.add(new maincategories("Basics"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+        maincats.add(new maincategories("Functions"));
+
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getApplicationContext(),maincats);

@@ -29,6 +29,12 @@ public class subtopics extends AppCompatActivity {
 
         switch (title){
             case "Introduction":
+                catigories.add(new subcategories("History of C++", "The C++ programming language has a history going back to 1979, when Bjarne Stroustrup was doing work for his Ph. D. thesis. One of the languages Stroustrup had the opportunity to work with was a language called Simula, which as the name implies is a language primarily designed for simulations.", "JBjjnqG0BP8"));
+                catigories.add(new subcategories("sub-intro", "sub-into-context", "XXXXXXX"));
+                catigories.add(new subcategories("sub-intro", "sub-into-context", "XXXXXXX"));
+                catigories.add(new subcategories("sub-intro", "sub-into-context", "XXXXXXX"));
+                break;
+            case "Basics":
                 catigories.add(new subcategories("sub-intro", "sub-into-context", "XXXXXXX"));
                 catigories.add(new subcategories("sub-intro", "sub-into-context", "XXXXXXX"));
                 catigories.add(new subcategories("sub-intro", "sub-into-context", "XXXXXXX"));

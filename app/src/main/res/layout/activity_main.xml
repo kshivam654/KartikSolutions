@@ -94,26 +94,26 @@
                 </androidx.cardview.widget.CardView>
 
 
-                    <LinearLayout
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/topicDetails"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:orientation="vertical">
+                        android:fontFamily="@font/raleway_italic"
+                        android:text="This will go for the text for the topic and the description of the work we are doing and this is a dummy text adeed to see if this works or not"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
 
-                        <TextView
-                            android:id="@+id/topicDetails"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/raleway_italic"
-                            android:text="This will go for the text for the topic and the description of the work we are doing and this is a dummy text adeed to see if this works or not"
-                            android:textSize="20sp"
-                            android:textStyle="bold|italic" />
+                </LinearLayout>
 
-                        </LinearLayout>
+            </LinearLayout>
 
-                    </LinearLayout>
-
-                </androidx.core.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
