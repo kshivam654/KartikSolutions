@@ -3,6 +3,7 @@ package app.sharma.learn;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Parcelable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,13 +67,13 @@ public class SubRecyclerViewAdapter extends RecyclerView.Adapter<SubRecyclerView
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
-
         CardView cardView ;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            title = (TextView) itemView.findViewById(R.id.titlee) ;
+            title = (TextView) itemView.findViewById(R.id.titlee);
+            title.setTextSize(TypedValue.COMPLEX_UNIT_SP, 13f);
             cardView = (CardView) itemView.findViewById(R.id.cardview_idd);
 
 
