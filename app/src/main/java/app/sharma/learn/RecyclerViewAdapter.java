@@ -81,7 +81,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            title = (TextView) itemView.findViewById(R.id.titlee) ;
+            title = (TextView) itemView.findViewById(R.id.titlee);
             cardView = (CardView) itemView.findViewById(R.id.cardview_idd);
 
 
